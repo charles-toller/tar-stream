@@ -2,12 +2,15 @@
   "name": "tar-stream",
   "version": "3.0.0",
   "description": "tar-stream is a streaming tar parser and generator and nothing else. It operates purely using streams which means you can easily extract/parse tarballs without ever hitting the file system.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "*.js"
+    "lib/*.js",
+    "lib/*.d.ts"
   ],
   "scripts": {
-    "test": "standard && brittle test/*.js"
+    "build": "tsc",
+    "test": "brittle test/*.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +28,11 @@
     "streamx": "^2.12.5"
   },
   "devDependencies": {
+    "@types/b4a": "^1.6.0",
+    "@types/streamx": "^2.9.1",
     "brittle": "^3.1.1",
     "concat-stream": "^2.0.0",
-    "standard": "^17.0.0"
+    "prettier": "^2.8.4",
+    "typescript": "^5.0.2"
   }
 }

@@ -1,3 +1,8 @@
 node_modules
 package-lock.json
 sandbox.js
+lib/**/*.js
+!lib/pack.js
+lib/**/*.d.ts
+lib/**/*.js.map
+.idea
