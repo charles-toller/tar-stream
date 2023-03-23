@@ -1,5 +1,7 @@
 # tar-stream
 
+This is a browser-compatible TypeScript fork of [mafintosh/tar-stream](https://github.com/mafintosh/tar-stream)
+
 tar-stream is a streaming tar parser and generator and nothing else. It operates purely using streams which means you can easily extract/parse tarballs without ever hitting the file system.
 
 Note that you still need to gunzip your data if you have a `.tar.gz`. We recommend using [gunzip-maybe](https://github.com/mafintosh/gunzip-maybe) in conjunction with this.
